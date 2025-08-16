@@ -31,10 +31,13 @@ export default function Hero() {
 
       <div className="container-max section-padding relative z-10">
         <div className="text-center space-y-8 animate-fade-in">
-          {/* Logo placeholder */}
-          <div className="w-32 h-32 mx-auto mb-8 bg-gradient-to-br from-accent-orange to-accent-red rounded-full flex items-center justify-center">
-            <span className="text-4xl font-bold text-white">RR</span>
-            {/* Replace with actual logo: <img src="/images/logo.png" alt="Roadrunners Track Club" className="w-full h-full object-contain" /> */}
+          {/* Logo */}
+          <div className="w-40 h-40 mx-auto mb-8 flex items-center justify-center">
+            <img 
+              src="/images/roadrunners-logo-on-dark.svg" 
+              alt="Roadrunners Track Club" 
+              className="w-full h-full object-contain drop-shadow-2xl" 
+            />
           </div>
 
           {/* Headline */}

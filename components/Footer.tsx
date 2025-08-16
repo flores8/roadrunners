@@ -9,9 +9,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Logo and Description */}
           <div>
-            <div className="w-20 h-20 mb-4 bg-gradient-to-br from-accent-orange to-accent-red rounded-full flex items-center justify-center">
-              <span className="text-2xl font-bold text-white">RR</span>
-              {/* Replace with actual logo: <img src="/images/logo.png" alt="Roadrunners Track Club" className="w-full h-full object-contain" /> */}
+            <div className="w-24 h-24 mb-4 flex items-center justify-center">
+              <img 
+                src="/images/roadrunners-logo-on-dark.svg" 
+                alt="Roadrunners Track Club" 
+                className="w-full h-full object-contain opacity-90 hover:opacity-100 transition-opacity" 
+              />
             </div>
             <p className="text-gray-400">
               Building champions on and off the track. Professional youth track & field training.
