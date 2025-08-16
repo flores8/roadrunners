@@ -16,11 +16,11 @@ export default function Testimonials() {
           {testimonials.list.map((testimonial, index) => (
             <div key={index} className="card relative">
               <div className="absolute top-4 left-4 text-6xl text-accent-orange/20">
-                "
+                &ldquo;
               </div>
               <div className="relative z-10 pt-8">
                 <p className="text-gray-300 italic mb-6 leading-relaxed">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div className="border-t border-gray-700 pt-4">
                   <p className="font-bold text-light-yellow">{testimonial.author}</p>
