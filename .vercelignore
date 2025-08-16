@@ -1,0 +1,22 @@
+# Ignore development files
+.git
+.gitignore
+README.md
+SETUP_INSTRUCTIONS.md
+.env*.local
+
+# Ignore scripts and setup files
+scripts/
+run.sh
+
+# Ignore source control and IDE files
+.vscode/
+.idea/
+*.log
+
+# Ignore test files
+__tests__
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
