@@ -29,48 +29,184 @@ export const siteContent = {
   programs: {
     title: "Our Programs",
     subtitle: "Choose the perfect program for your young athlete",
-    list: [
-      {
-        name: "Elementary Speed (Ages 8-10)",
-        bullets: [
-          "Fundamentals of running form",
-          "Introduction to track events",
-          "Fun, game-based training",
-        ],
-        registrationLink: "https://roadrunners-track.cheddarup.com/elementary-speed", // Replace with actual link
-        price: "$150/month",
-      },
-      {
-        name: "Middle School Elite (Ages 11-14)",
-        bullets: [
-          "Advanced technique development",
-          "Event specialization options",
-          "Competition preparation",
-        ],
-        registrationLink: "https://roadrunners-track.cheddarup.com/middle-school-elite", // Replace with actual link
-        price: "$175/month",
-      },
-      {
-        name: "High School Performance (Ages 14-18)",
-        bullets: [
-          "College recruitment support",
-          "Personalized training plans",
-          "Strength & conditioning program",
-        ],
-        registrationLink: "https://roadrunners-track.cheddarup.com/high-school-performance", // Replace with actual link
-        price: "$200/month",
-      },
-      {
-        name: "Summer Sprint Camp",
-        bullets: [
-          "Intensive 6-week program",
-          "Speed development focus",
-          "Video analysis included",
-        ],
-        registrationLink: "https://roadrunners-track.cheddarup.com/summer-camp", // Replace with actual link
-        price: "$450/session",
-      },
-    ],
+    track: {
+      title: "Track & Field",
+      seasons: [
+        {
+          name: "Season 1",
+          dates: "Feb 1 – Apr 26",
+          plans: [
+            {
+              name: "Practice Only",
+              price: "$250",
+              bullets: [
+                "Team practices for the full season",
+              ],
+              registrationLink: "https://roadrunners-track.cheddarup.com/track-s1-practice", // Replace with actual link
+            },
+            {
+              name: "Practice + Competition + Extra Practice",
+              price: "$300",
+              bullets: [
+                "All season practices",
+                "Meet support and competition entries",
+                "One additional weekly practice",
+              ],
+              registrationLink: "https://roadrunners-track.cheddarup.com/track-s1-practice-comp", // Replace with actual link
+            },
+          ],
+          groups: [
+            {
+              name: "Elementary (Ages 8 and under)",
+              bullets: [
+                "Sprint and distance training",
+                "Form and fundamentals",
+                "Form correction",
+                "Javeline training",
+                "Intro to long jump",
+              ],
+            },
+            {
+              name: "Middle School (Ages 9-12)",
+              bullets: [
+                "Sprint and distance training",
+                "Form and fundamentals",
+                "Javeline training",
+                "Shotput training",
+                "Long jump training",
+                "Intro to hurdles",
+                "Intro to high jump",
+              ],
+            },
+            {
+              name: "High School (Ages 13–18)",
+              bullets: [
+                "Sprint and distance training",
+                "Form and fundamentals",
+                "Javeline training",
+                "Shotput training",
+                "Hurdles training",
+                "High jump training",
+                "Long/triple jump training",
+              ],
+            },
+            {
+              name: "Small Group Specialized Coaching",
+              bullets: [
+                "Customized small-group sessions (2-4 athletes)",
+                "Distance training (800m+)",
+                "Sprints training",
+                "Hurdles training",
+                "Jumps training",
+              ],
+            },
+          ],
+        },
+        {
+          name: "Season 2",
+          dates: "May 26 – Jun 31",
+          plans: [
+            {
+              name: "Practice Only",
+              price: "$150",
+              bullets: [
+                "Team practices for the full season",
+              ],
+              registrationLink: "https://roadrunners-track.cheddarup.com/track-s2-practice", // Replace with actual link
+            },
+            {
+              name: "Practice + Competition + Extra Practice",
+              price: "$200",
+              bullets: [
+                "All season practices",
+                "Meet support and competition entries",
+                "One additional weekly practice",
+              ],
+              registrationLink: "https://roadrunners-track.cheddarup.com/track-s2-practice-comp", // Replace with actual link
+            },
+          ],
+          groups: [
+            {
+              name: "Elementary (Ages 8–10)",
+              bullets: [
+                "Fundamentals of running form",
+                "Introduction to track events",
+                "Fun, game-based training",
+              ],
+            },
+            {
+              name: "Middle School (Ages 11–14)",
+              bullets: [
+                "Advanced technique development",
+                "Event specialization options",
+                "Competition preparation",
+              ],
+            },
+            {
+              name: "High School (Ages 14–18)",
+              bullets: [
+                "College recruitment support",
+                "Personalized training plans",
+                "Strength & conditioning program",
+              ],
+            },
+            {
+              name: "Small Group Specialized Coaching",
+              bullets: [
+                "Customized small-group sessions (max 4 athletes)",
+                "Event-specific technical work",
+                "Video analysis and targeted feedback",
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    crossCountry: {
+      title: "Cross Country",
+      list: [
+        {
+          name: "XC Development (Ages 10-14)",
+          bullets: [
+            "Aerobic base building",
+            "Hills and pacing strategy",
+            "Form and cadence drills",
+          ],
+          registrationLink: "https://roadrunners-track.cheddarup.com/xc-development", // Replace with actual link
+          price: "$150/month",
+        },
+        {
+          name: "XC Performance (Ages 14-18)",
+          bullets: [
+            "Threshold and tempo work",
+            "Race tactics and course preview",
+            "Strength & mobility support",
+          ],
+          registrationLink: "https://roadrunners-track.cheddarup.com/xc-performance", // Replace with actual link
+          price: "$175/month",
+        },
+        {
+          name: "Summer XC Conditioning",
+          bullets: [
+            "8-week aerobic foundation plan",
+            "Heat acclimation best practices",
+            "Weekly long run guidance",
+          ],
+          registrationLink: "https://roadrunners-track.cheddarup.com/xc-conditioning", // Replace with actual link
+          price: "$300/session",
+        },
+        {
+          name: "Pre-Season XC Tune-Up",
+          bullets: [
+            "4-week sharpening block",
+            "Intervals and race simulations",
+            "Recovery and nutrition guidance",
+          ],
+          registrationLink: "https://roadrunners-track.cheddarup.com/xc-tune-up", // Replace with actual link
+          price: "$225/session",
+        },
+      ],
+    },
   },
 
   // What to Expect Section
