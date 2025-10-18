@@ -29,6 +29,7 @@ export const siteContent = {
   programs: {
     title: "Our Programs",
     subtitle: "Choose the perfect program for your young athlete",
+    note: "Returning athletes of any program receive a practice shirt.",
     track: {
       title: "Track & Field",
       seasons: [
@@ -42,17 +43,17 @@ export const siteContent = {
               bullets: [
                 "Team practices for the full season",
               ],
-              registrationLink: "https://roadrunners-track.cheddarup.com/track-s1-practice", // Replace with actual link
+              registrationLink: "https://ovroadrunners.cheddarup.com", // Cheddar Up portal
             },
             {
-              name: "Practice + Competition + Extra Practice",
+              name: "Competition",
               price: "$300",
               bullets: [
                 "All season practices",
                 "Meet support and competition entries",
                 "One additional weekly practice",
               ],
-              registrationLink: "https://roadrunners-track.cheddarup.com/track-s1-practice-comp", // Replace with actual link
+              registrationLink: "https://ovroadrunners.cheddarup.com", // Cheddar Up portal
             },
           ],
           groups: [
@@ -67,7 +68,7 @@ export const siteContent = {
               ],
             },
             {
-              name: "Middle School (Ages 9-12)",
+              name: "Middle School (Ages 9-13)",
               bullets: [
                 "Sprint and distance training",
                 "Form and fundamentals",
@@ -79,7 +80,7 @@ export const siteContent = {
               ],
             },
             {
-              name: "High School (Ages 13–18)",
+              name: "High School (Ages 14–18)",
               bullets: [
                 "Sprint and distance training",
                 "Form and fundamentals",
@@ -90,16 +91,6 @@ export const siteContent = {
                 "Long/triple jump training",
               ],
             },
-            {
-              name: "Small Group Specialized Coaching",
-              bullets: [
-                "Customized small-group sessions (2-4 athletes)",
-                "Distance training (800m+)",
-                "Sprints training",
-                "Hurdles training",
-                "Jumps training",
-              ],
-            },
           ],
         },
         {
@@ -107,22 +98,45 @@ export const siteContent = {
           dates: "May 26 – Jun 31",
           plans: [
             {
-              name: "Practice Only",
+              name: "Practice Only (Ages 13 and under)",
               price: "$150",
               bullets: [
-                "Team practices for the full season",
+                "Team practices twice a week",
               ],
-              registrationLink: "https://roadrunners-track.cheddarup.com/track-s2-practice", // Replace with actual link
+              registrationLink: "https://ovroadrunners.cheddarup.com", // Cheddar Up portal
             },
             {
-              name: "Practice + Competition + Extra Practice",
+              name: "Competition  (Ages 13 and under)",
               price: "$200",
               bullets: [
-                "All season practices",
-                "Meet support and competition entries",
-                "One additional weekly practice",
+                "Team practices twice a week",
+                "Competition practice once a week",
+                "Competition entry fees included",
+                "Coaching at meets",
+                "Does not include the required USATF youth membership fee and competition uniforms",
               ],
-              registrationLink: "https://roadrunners-track.cheddarup.com/track-s2-practice-comp", // Replace with actual link
+              registrationLink: "https://ovroadrunners.cheddarup.com", // Cheddar Up portal
+            },
+            {
+              name: "Practice Only (Ages 14+)",
+              price: "$200",
+              bullets: [
+                "Team practices twice a week",
+                "High school only practices once a week",
+              ],
+              registrationLink: "https://ovroadrunners.cheddarup.com", // Replace with actual link
+            },
+            {
+              name: "Competition (Ages 14+)",
+              price: "$250",
+              bullets: [
+                "Team practices twice a week",
+                "Competition practice once a week",
+                "Competition entry fees included",
+                "Coaching at meets",
+                "Does not include the required USATF youth membership fee and competition uniforms",
+              ],
+              registrationLink: "https://ovroadrunners.cheddarup.com", // Cheddar Up portal
             },
           ],
           groups: [
@@ -160,50 +174,117 @@ export const siteContent = {
             },
           ],
         },
+        {
+          name: "Small Group Specialized Coaching",
+          dates: "Every 2 weeks",
+          plans: [
+            {
+              name: "High school ages only",
+              price: "$300",
+              bullets: [
+                "Customized small-group sessions (2-4 athletes)",
+                "Sprints training",
+                "Hurdles training",
+                "Jumps training",
+              ],
+              registrationLink: "https://ovroadrunners.cheddarup.com-comp", // Replace with actual link
+            },
+          ],
+          groups: [
+            {
+              name: "Elementary (Ages 8 and under)",
+              bullets: [
+                "Sprint and distance training",
+                "Form and fundamentals",
+                "Form correction",
+                "Javeline training",
+                "Intro to long jump",
+              ],
+            },
+            {
+              name: "Middle School (Ages 9-13)",
+              bullets: [
+                "Sprint and distance training",
+                "Form and fundamentals",
+                "Javeline training",
+                "Shotput training",
+                "Long jump training",
+                "Intro to hurdles",
+                "Intro to high jump",
+              ],
+            },
+            {
+              name: "High School (Ages 14–18)",
+              bullets: [
+                "Sprint and distance training",
+                "Form and fundamentals",
+                "Javeline training",
+                "Shotput training",
+                "Hurdles training",
+                "High jump training",
+                "Long/triple jump training",
+              ],
+            },
+            {
+              name: "Small Group Specialized Coaching",
+              bullets: [
+                "Customized small-group sessions (2-4 athletes)",
+                "Sprints training",
+                "Hurdles training",
+                "Jumps training",
+              ],
+            },
+          ],
+        },
       ],
     },
     crossCountry: {
       title: "Cross Country",
-      list: [
+      seasons: [
         {
-          name: "XC Development (Ages 10-14)",
-          bullets: [
-            "Aerobic base building",
-            "Hills and pacing strategy",
-            "Form and cadence drills",
+          name: "Cross Country Season",
+          dates: "Aug – Nov",
+          plans: [
+            {
+              name: "Practice Only",
+              price: "$250",
+              bullets: [
+                "Team practices twice a week",
+              ],
+              registrationLink: "https://ovroadrunners.cheddarup.com", // Cheddar Up portal
+            },
+            {
+              name: "Competition",
+              price: "$300",
+              bullets: [
+                "Team practices twice a week",
+                "Competition practice once a week",
+                "Competition entry fees included",
+                "Coaching at meets",
+                "Does not include the required USATF youth membership fee and competition uniforms",
+              ],
+              registrationLink: "https://ovroadrunners.cheddarup.com", // Cheddar Up portal
+            },
           ],
-          registrationLink: "https://roadrunners-track.cheddarup.com/xc-development", // Replace with actual link
-          price: "$150/month",
-        },
-        {
-          name: "XC Performance (Ages 14-18)",
-          bullets: [
-            "Threshold and tempo work",
-            "Race tactics and course preview",
-            "Strength & mobility support",
+          groups: [
+            {
+              name: "Elementary (Ages 8–10)",
+              bullets: [
+                "Running fundamentals and posture",
+                "Introduction to distance running",
+                "Compete and gain confidence",
+              ],
+            },
+            {
+              name: "Middle School (Ages 11–14)",
+              bullets: [
+                "Endurance development and pacing",
+                "Form and fundamentals",
+                "Hills and terrain skills",
+                "Competition preparation and coaching",
+              ],
+            },
           ],
-          registrationLink: "https://roadrunners-track.cheddarup.com/xc-performance", // Replace with actual link
-          price: "$175/month",
-        },
-        {
-          name: "Summer XC Conditioning",
-          bullets: [
-            "8-week aerobic foundation plan",
-            "Heat acclimation best practices",
-            "Weekly long run guidance",
-          ],
-          registrationLink: "https://roadrunners-track.cheddarup.com/xc-conditioning", // Replace with actual link
-          price: "$300/session",
-        },
-        {
-          name: "Pre-Season XC Tune-Up",
-          bullets: [
-            "4-week sharpening block",
-            "Intervals and race simulations",
-            "Recovery and nutrition guidance",
-          ],
-          registrationLink: "https://roadrunners-track.cheddarup.com/xc-tune-up", // Replace with actual link
-          price: "$225/session",
         },
       ],
     },
