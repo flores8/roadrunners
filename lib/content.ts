@@ -145,22 +145,28 @@ export const siteContent = {
     subtitle: "Dedicated professionals committed to your athlete's success",
     list: [
       {
-        name: "Coach Marcus Johnson",
-        title: "Head Coach & Founder",
-        bio: "Former NCAA Division I sprinter with 15+ years of coaching experience. Specializes in sprint mechanics and speed development.",
-        image: "/images/coach-marcus.jpg", // Replace with actual image
+        name: "Jenn Houser",
+        image: "/images/jenn-houser.jpg",
+        title: "Sprints & Hurdles",
+        bio: "Focuses on sprint mechanics, block starts, and efficient hurdle technique. USATF certified with a passion for developing speed and confidence.",
       },
       {
-        name: "Coach Sarah Williams",
-        title: "Distance & Middle Distance Coach",
-        bio: "Boston Marathon qualifier and certified youth athletics coach. Focuses on building endurance and mental toughness.",
-        image: "/images/coach-sarah.jpg", // Replace with actual image
+        name: "Leah Britt",
+        image: "/images/leah-britt.jpg",
+        title: "Middle Distance & Endurance",
+        bio: "Builds aerobic base, pacing strategy, and race tactics for 800m–3200m. Emphasizes progressive training and injury prevention.",
       },
       {
-        name: "Coach David Chen",
-        title: "Jumps & Throws Coach",
-        bio: "Former high school state champion in triple jump. Expert in field events and plyometric training.",
-        image: "/images/coach-david.jpg", // Replace with actual image
+        name: "Mike West",
+        image: "/images/mike-west.jpg",
+        title: "Strength & Speed Development",
+        bio: "Leads strength, mobility, and sprint power development. Designs age-appropriate lifting and plyometric routines to support performance.",
+      },
+      {
+        name: "Tiffany Simmons",
+        image: "/images/tiffany-simmons.jpg",
+        title: "Jumps & Multis",
+        bio: "Specializes in long/triple jump approach, takeoff mechanics, and multi-event fundamentals. Known for technical cues and positive coaching style.",
       },
     ],
   },
