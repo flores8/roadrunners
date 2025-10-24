@@ -68,7 +68,7 @@ export default function Programs() {
                 </div>
 
                 {/* Plans for the season */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
                   {season.plans.map((plan, planIndex) => (
                     <div
                       key={`season-${seasonIndex}-plan-${planIndex}`}
@@ -122,7 +122,7 @@ export default function Programs() {
                 <h6 className="text-lg font-semibold text-gray-200">Training Groups by Age</h6>
                 <span className="text-sm text-gray-400">Placement based on age and experience</span>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                 {(programs.crossCountry.seasons?.[0]?.groups || []).map((group, groupIndex) => (
                   <div key={`xc-group-card-${groupIndex}`} className="card">
                     <div className="flex flex-col h-full">
@@ -152,7 +152,7 @@ export default function Programs() {
                 <h4 className="text-2xl md:text-3xl font-bold text-accent-orange">{season.name}</h4>
                 <span className="inline-flex items-center rounded-full border border-gray-700 bg-gray-800/60 px-2.5 py-0.5 text-xs text-gray-300">{season.dates}</span>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
                 {season.plans.map((plan, planIndex) => (
                   <div
                     key={`xc-season-${seasonIndex}-plan-${planIndex}`}

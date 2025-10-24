@@ -157,14 +157,6 @@ export default function Location() {
               <p className="text-gray-300 mb-4">
                 Sign up for a free trial practice and see why families love Roadrunners Track Club!
               </p>
-              <a
-                href={siteContent.hero.cta2.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary inline-block"
-              >
-                Try a Free Practice
-              </a>
             </div>
           </div>
         </div>

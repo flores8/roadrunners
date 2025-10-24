@@ -59,15 +59,6 @@ export default function Hero() {
             >
               {hero.cta1.text}
             </button>
-            <a
-              href={hero.cta2.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-outline text-lg"
-              aria-label="Sign up for free trial practice"
-            >
-              {hero.cta2.text}
-            </a>
           </div>
         </div>
 

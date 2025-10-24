@@ -13,14 +13,10 @@ export const siteContent = {
   // Hero Section
   hero: {
     headline: "Run Fast. Train Smart. Build Champions.",
-    subheadline: "Professional track & field training for youth athletes ages 8-18",
+    subheadline: "Professional track & field training for youth athletes ages 7-18",
     cta1: {
       text: "See Programs",
       link: "#programs", // Scroll to programs section
-    },
-    cta2: {
-      text: "Try a Free Practice",
-      link: "https://roadrunners-track.cheddarup.com/free-trial", // Replace with actual Cheddar Up link
     },
     backgroundImage: "/images/hero-bg.jpg", // Replace with actual hero image
   },
@@ -141,7 +137,7 @@ export const siteContent = {
           ],
           groups: [
             {
-              name: "Elementary (Ages 8–10)",
+              name: "Elementary (Ages 7–10)",
               bullets: [
                 "Fundamentals of running form",
                 "Introduction to track events",
@@ -268,7 +264,7 @@ export const siteContent = {
           ],
           groups: [
             {
-              name: "Elementary (Ages 8–10)",
+              name: "Elementary (Ages 7–10)",
               bullets: [
                 "Running fundamentals and posture",
                 "Introduction to distance running",
