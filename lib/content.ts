@@ -30,6 +30,7 @@ export const siteContent = {
       title: "Track & Field",
       seasons: [
         {
+          active: false,
           name: "Season 1",
           dates: "Feb 1 – Apr 26",
           plans: [
@@ -90,6 +91,7 @@ export const siteContent = {
           ],
         },
         {
+          active: false,
           name: "Season 2",
           dates: "May 26 – Jun 31",
           plans: [
@@ -110,6 +112,7 @@ export const siteContent = {
                 "Competition entry fees included",
                 "Coaching at meets",
                 "Does not include the required USATF youth membership fee and competition uniforms",
+                // https://www.usatf.org/home-normal/top-utility-nav-content/membership/individual-youth-membership
               ],
               registrationLink: "https://ovroadrunners.cheddarup.com", // Cheddar Up portal
             },
@@ -171,6 +174,7 @@ export const siteContent = {
           ],
         },
         {
+          active: true,
           name: "Small Group Specialized Coaching",
           dates: "Every 2 weeks",
           plans: [
@@ -233,11 +237,16 @@ export const siteContent = {
           ],
         },
       ],
+      emptyState: {
+        title: "Registration Closed",
+        message: "We are currently out of season. Please check back later for upcoming programs.",
+      },
     },
     crossCountry: {
       title: "Cross Country",
       seasons: [
         {
+          active: false,
           name: "Cross Country Season",
           dates: "Aug – Nov",
           plans: [
@@ -294,7 +303,7 @@ export const siteContent = {
       {
         icon: "🏃‍♂️", // Can be replaced with actual icon component
         title: "Expert Coaching",
-        description: "USATF certified coaches with competitive backgrounds",
+        description: "USATF certified coaches with years of coaching experience",
       },
       {
         icon: "⚡", // Can be replaced with actual icon component
@@ -317,37 +326,37 @@ export const siteContent = {
   // Schedule Section
   schedule: {
     title: "Weekly Schedule",
-    subtitle: "Training sessions at City Track Stadium",
+    subtitle: "Training sessions to make you faster",
     sessions: [
       {
         day: "Monday",
-        time: "4:00 PM - 6:00 PM",
-        groups: "All Groups",
-        focus: "Speed Development",
+        time: "5:45 PM - 7:00 PM",
+        groups: "Practice",
       },
       {
         day: "Tuesday",
-        time: "4:00 PM - 5:30 PM",
-        groups: "Elementary & Middle School",
-        focus: "Technique Work",
+        time: "On your own",
+        groups: "",
       },
       {
         day: "Wednesday",
-        time: "4:00 PM - 6:00 PM",
-        groups: "All Groups",
-        focus: "Endurance Training",
+        time: "5:45 PM - 7:00 PM",
+        groups: "Competitive Only Practice",
       },
       {
         day: "Thursday",
-        time: "4:00 PM - 5:30 PM",
-        groups: "High School Only",
-        focus: "Event Specific",
+        time: "5:45 PM - 7:00 PM",
+        groups: "Practice",
+      },
+      {
+        day: "Friday",
+        time: "On your own",
+        groups: "",
       },
       {
         day: "Saturday",
-        time: "9:00 AM - 11:00 AM",
-        groups: "All Groups",
-        focus: "Competition Prep",
+        time: "To be announced",
+        groups: "Track meets",
       },
     ],
   },
@@ -386,10 +395,10 @@ export const siteContent = {
 
   // Testimonials Section
   testimonials: {
-    title: "What Parents & Athletes Say",
+    title: "About the Oro Valley Roadrunners",
     list: [
       {
-        quote: "My daughter's confidence and speed have improved dramatically. The coaches truly care about each athlete's development.",
+        quote: "The Oro Valley Roadrunners are a dedicated cross country and track & field club, bringing together athletes of all ages and skill levels who share a passion for running, jumping, and throwing. Founded to give the Oro Valley community a place to train, compete, and grow, our club offers a supportive environment where athletes can push their limits, set new goals, and develop a lifelong love for the sport. We believe that success in track and cross country comes from hard work, resilience, and a strong team spirit.",
         author: "Jennifer M.",
         role: "Parent",
       },
@@ -412,41 +421,39 @@ export const siteContent = {
     list: [
       {
         question: "What equipment does my child need?",
-        answer: "Athletes need running shoes (spikes optional), water bottle, and comfortable athletic clothing. We provide all training equipment.",
+        answer: "For cross country, a good pair of running shoes and a water bottle are the essentials. For track and field, athletes may eventually benefit from event-specific shoes (like spikes), but these are not required for beginners. Comfortable athletic clothing is recommended. We’ll provide guidance on any additional gear as your child progresses.",
       },
       {
         question: "Do you offer financial aid?",
-        answer: "Yes! We believe every child deserves access to quality training. Apply for our scholarship program.",
-        linkText: "Apply for Financial Aid",
-        link: "https://roadrunners-track.cheddarup.com/financial-aid", // Replace with actual link
+        answer: "Yes. We believe every child should have the opportunity to participate in running. If cost is a barrier, please reach out to us. We have financial aid options and can work with families on a case-by-case basis.", // Replace with actual link
       },
       {
         question: "Can my child try a practice before committing?",
-        answer: "Absolutely! We offer a free trial practice for all new athletes. Sign up on our website or contact us directly.",
+        answer: "Absolutely! We welcome new athletes to come try one practice for free. It’s a great way to see if Roadrunners is a good fit before registering.",
       },
       {
         question: "What if my child has never done track before?",
-        answer: "No problem! We welcome athletes of all skill levels. Our coaches will assess your child and place them in the appropriate training group.",
+        answer: "No experience is required! Many of our athletes start with little or no background in track or cross country. Our coaches teach the fundamentals in a positive, supportive environment where kids can grow at their own pace.",
       },
       {
         question: "Do you compete in meets?",
-        answer: "Yes, we participate in local and regional track meets throughout the season. Competition is optional but encouraged for athlete development.",
+        answer: "Yes. Our athletes have the option to participate in local and regional meets during the season. Meets are a fun way to test progress, build team spirit, and celebrate hard work—but participation is encouraged, not required.",
       },
       {
         question: "What's your weather policy?",
-        answer: "We train rain or shine! Practice is only cancelled for lightning or extreme weather. Updates are sent via email and posted on Instagram.",
+        answer: "Safety comes first. Practices may be delayed, shortened, or canceled in cases of lightning, heavy rain, extreme heat, or poor air quality. Updates are sent promptly through our TeamReach communication app so families are always informed.",
       },
     ],
   },
 
   // Location & Contact Section
   location: {
-    title: "Location & Contact",
-    subtitle: "Find us at City Track Stadium",
+    title: "Contact Us",
+    subtitle: "Reach out and get in touch with us",
     address: "123 Stadium Way, Runner City, RC 12345",
     mapLink: "https://maps.google.com/?q=City+Track+Stadium", // Replace with actual Google Maps link
-    email: "info@roadrunnerstrack.club", // Replace with actual email
-    phone: "(555) 123-4567", // Replace with actual phone
+    email: "ovroadrunners@gmail.com", // Replace with actual email
+    phone: "(555) 123-4567", // put Leslie's phone number in here // Replace with actual phone
     instagram: "@roadrunnerstrack", // Replace with actual Instagram handle
     instagramLink: "https://instagram.com/roadrunnerstrack", // Replace with actual link
   },

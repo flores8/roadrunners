@@ -21,14 +21,14 @@ export default function Programs() {
             </h3>
           </div>
 
-        {/* Programs Note */}
-        {programs.note ? (
-          <div className="mb-8 animate-slide-up" style={{ animationDelay: '50ms' }}>
-            <div className="rounded-md border border-gray-700 bg-gray-800/60 px-4 py-3 text-gray-200 text-sm">
-              {programs.note}
+          {/* Programs Note */}
+          {programs.note ? (
+            <div className="mb-8 animate-slide-up" style={{ animationDelay: '50ms' }}>
+              <div className="rounded-md border border-gray-700 bg-gray-800/60 px-4 py-3 text-gray-200 text-sm">
+                {programs.note}
+              </div>
             </div>
-          </div>
-        ) : null}
+          ) : null}
 
           {/* Training Groups displayed once */}
           <div className="mb-10">
@@ -55,55 +55,70 @@ export default function Programs() {
                 </div>
               ))}
             </div>
-          <div className="my-10 border-t border-gray-800" />
+            <div className="my-10 border-t border-gray-800" />
           </div>
 
           {/* Seasons */}
           <div className="space-y-10">
-            {programs.track.seasons?.map((season, seasonIndex) => (
-              <div key={`season-${seasonIndex}`} className="animate-slide-up" style={{ animationDelay: `${seasonIndex * 100}ms` }}>
-              <div className="mb-4 flex items-baseline gap-3">
-                  <h4 className="text-2xl md:text-3xl font-bold text-accent-orange">{season.name}</h4>
-                <span className="inline-flex items-center rounded-full border border-gray-700 bg-gray-800/60 px-2.5 py-0.5 text-xs text-gray-300">{season.dates}</span>
-                </div>
+            {programs.track.seasons?.map((season, seasonIndex) => {
+              const isActive = (season as any).active !== false;
+              return (
+                <div key={`season-${seasonIndex}`} className={`animate-slide-up ${!isActive ? 'opacity-75' : ''}`} style={{ animationDelay: `${seasonIndex * 100}ms` }}>
+                  <div className="mb-4 flex items-baseline gap-3">
+                    <h4 className="text-2xl md:text-3xl font-bold text-accent-orange">
+                      {season.name}
+                      {!isActive && <span className="ml-3 text-lg font-normal text-gray-400">(Registration Closed)</span>}
+                    </h4>
+                    <span className="inline-flex items-center rounded-full border border-gray-700 bg-gray-800/60 px-2.5 py-0.5 text-xs text-gray-300">{season.dates}</span>
+                  </div>
 
-                {/* Plans for the season */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
-                  {season.plans.map((plan, planIndex) => (
-                    <div
-                      key={`season-${seasonIndex}-plan-${planIndex}`}
-                      className="card hover:transform hover:-translate-y-2 transition-all duration-300"
-                    >
-                      <div className="flex flex-col h-full">
-                      <div className="mb-3 flex items-baseline justify-between">
-                        <h5 className="text-xl font-bold text-accent-blue">{plan.name}</h5>
-                        <span className="inline-flex items-center rounded-md border border-amber-400/30 bg-amber-400/10 px-2 py-0.5 text-sm text-amber-300">{plan.price}</span>
+                  {/* Plans for the season */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+                    {season.plans.map((plan, planIndex) => (
+                      <div
+                        key={`season-${seasonIndex}-plan-${planIndex}`}
+                        className={`card transition-all duration-300 ${isActive ? 'hover:transform hover:-translate-y-2' : 'grayscale'}`}
+                      >
+                        <div className="flex flex-col h-full">
+                          <div className="mb-3 flex items-baseline justify-between">
+                            <h5 className="text-xl font-bold text-accent-blue">{plan.name}</h5>
+                            <span className="inline-flex items-center rounded-md border border-amber-400/30 bg-amber-400/10 px-2 py-0.5 text-sm text-amber-300">{plan.price}</span>
+                          </div>
+                          {plan.bullets?.length ? (
+                            <ul className="space-y-2 mb-6 flex-grow">
+                              {plan.bullets.map((bullet, bulletIndex) => (
+                                <li key={bulletIndex} className="flex items-start">
+                                  <span className="text-accent-blue mr-2 mt-1">✓</span>
+                                  <span className="text-gray-300">{bullet}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          ) : null}
+                          {isActive ? (
+                            <a
+                              href={plan.registrationLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="btn-secondary w-full text-center"
+                              aria-label={`Register for ${plan.name}`}
+                            >
+                              Register Now
+                            </a>
+                          ) : (
+                            <button
+                              disabled
+                              className="w-full py-3 px-6 rounded-md bg-gray-700 text-gray-400 font-semibold cursor-not-allowed border border-gray-600"
+                            >
+                              Registration Closed
+                            </button>
+                          )}
+                        </div>
                       </div>
-                        {plan.bullets?.length ? (
-                          <ul className="space-y-2 mb-6 flex-grow">
-                            {plan.bullets.map((bullet, bulletIndex) => (
-                              <li key={bulletIndex} className="flex items-start">
-                                <span className="text-accent-blue mr-2 mt-1">✓</span>
-                                <span className="text-gray-300">{bullet}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        ) : null}
-                        <a
-                          href={plan.registrationLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="btn-secondary w-full text-center"
-                          aria-label={`Register for ${plan.name}`}
-                        >
-                          Register Now
-                        </a>
-                      </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
@@ -146,48 +161,63 @@ export default function Programs() {
           ) : null}
 
           {/* Cross Country Season(s) */}
-          {programs.crossCountry.seasons?.map((season, seasonIndex) => (
-            <div key={`xc-season-${seasonIndex}`} className="space-y-6">
-              <div className="mb-4 flex items-baseline gap-3">
-                <h4 className="text-2xl md:text-3xl font-bold text-accent-orange">{season.name}</h4>
-                <span className="inline-flex items-center rounded-full border border-gray-700 bg-gray-800/60 px-2.5 py-0.5 text-xs text-gray-300">{season.dates}</span>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
-                {season.plans.map((plan, planIndex) => (
-                  <div
-                    key={`xc-season-${seasonIndex}-plan-${planIndex}`}
-                    className="card hover:transform hover:-translate-y-2 transition-all duration-300"
-                  >
-                    <div className="flex flex-col h-full">
-                      <div className="mb-3 flex items-baseline justify-between">
-                        <h5 className="text-xl font-bold text-accent-blue">{plan.name}</h5>
-                        <span className="inline-flex items-center rounded-md border border-amber-400/30 bg-amber-400/10 px-2 py-0.5 text-sm text-amber-300">{plan.price}</span>
+          {programs.crossCountry.seasons?.map((season, seasonIndex) => {
+            const isActive = (season as any).active !== false;
+            return (
+              <div key={`xc-season-${seasonIndex}`} className={`space-y-6 ${!isActive ? 'opacity-75' : ''}`}>
+                <div className="mb-4 flex items-baseline gap-3">
+                  <h4 className="text-2xl md:text-3xl font-bold text-accent-orange">
+                    {season.name}
+                    {!isActive && <span className="ml-3 text-lg font-normal text-gray-400">(Registration Closed)</span>}
+                  </h4>
+                  <span className="inline-flex items-center rounded-full border border-gray-700 bg-gray-800/60 px-2.5 py-0.5 text-xs text-gray-300">{season.dates}</span>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+                  {season.plans.map((plan, planIndex) => (
+                    <div
+                      key={`xc-season-${seasonIndex}-plan-${planIndex}`}
+                      className={`card transition-all duration-300 ${isActive ? 'hover:transform hover:-translate-y-2' : 'grayscale'}`}
+                    >
+                      <div className="flex flex-col h-full">
+                        <div className="mb-3 flex items-baseline justify-between">
+                          <h5 className="text-xl font-bold text-accent-blue">{plan.name}</h5>
+                          <span className="inline-flex items-center rounded-md border border-amber-400/30 bg-amber-400/10 px-2 py-0.5 text-sm text-amber-300">{plan.price}</span>
+                        </div>
+                        {plan.bullets?.length ? (
+                          <ul className="space-y-2 mb-6 flex-grow">
+                            {plan.bullets.map((bullet, bulletIndex) => (
+                              <li key={bulletIndex} className="flex items-start">
+                                <span className="text-accent-blue mr-2 mt-1">✓</span>
+                                <span className="text-gray-300">{bullet}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : null}
+                        {isActive ? (
+                          <a
+                            href={plan.registrationLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-secondary w-full text-center"
+                            aria-label={`Register for ${plan.name}`}
+                          >
+                            Register Now
+                          </a>
+                        ) : (
+                          <button
+                            disabled
+                            className="w-full py-3 px-6 rounded-md bg-gray-700 text-gray-400 font-semibold cursor-not-allowed border border-gray-600"
+                          >
+                            Registration Closed
+                          </button>
+                        )}
                       </div>
-                      {plan.bullets?.length ? (
-                        <ul className="space-y-2 mb-6 flex-grow">
-                          {plan.bullets.map((bullet, bulletIndex) => (
-                            <li key={bulletIndex} className="flex items-start">
-                              <span className="text-accent-blue mr-2 mt-1">✓</span>
-                              <span className="text-gray-300">{bullet}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      ) : null}
-                      <a
-                        href={plan.registrationLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-secondary w-full text-center"
-                        aria-label={`Register for ${plan.name}`}
-                      >
-                        Register Now
-                      </a>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

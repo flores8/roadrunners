@@ -19,8 +19,7 @@ export default function Schedule() {
               <tr className="border-b border-gray-700">
                 <th className="text-left py-4 px-4 text-accent-orange font-bold">Day</th>
                 <th className="text-left py-4 px-4 text-accent-orange font-bold">Time</th>
-                <th className="text-left py-4 px-4 text-accent-orange font-bold">Groups</th>
-                <th className="text-left py-4 px-4 text-accent-orange font-bold">Focus</th>
+                <th className="text-left py-4 px-4 text-accent-orange font-bold">Practice/Meets</th>
               </tr>
             </thead>
             <tbody>
@@ -32,7 +31,6 @@ export default function Schedule() {
                   <td className="py-4 px-4 font-semibold text-light-yellow">{session.day}</td>
                   <td className="py-4 px-4 text-gray-300">{session.time}</td>
                   <td className="py-4 px-4 text-gray-300">{session.groups}</td>
-                  <td className="py-4 px-4 text-accent-blue">{session.focus}</td>
                 </tr>
               ))}
             </tbody>
@@ -41,8 +39,7 @@ export default function Schedule() {
 
         <div className="mt-8 p-4 bg-accent-blue/10 rounded-lg border border-accent-blue/30">
           <p className="text-center text-gray-300">
-            <span className="font-semibold text-accent-blue">Note:</span> All training sessions are held at City Track Stadium. 
-            Weather updates will be posted on our Instagram page.
+            <span className="font-semibold text-accent-blue">Note:</span> Any cancellations or changes will be communicated through Team Reach. 
           </p>
         </div>
       </div>
