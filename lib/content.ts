@@ -183,7 +183,7 @@ export const siteContent = {
                 "Sprints training",
                 "Hurdles training",
               ],
-              registrationLink: "https://ovroadrunners.cheddarup.com-comp", // Replace with actual link
+              registrationLink: "https://ovroadrunners.cheddarup.com", // Replace with actual link
             },
           ],
           groups: [
