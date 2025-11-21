@@ -13,7 +13,7 @@ export const siteContent = {
   // Hero Section
   hero: {
     headline: "Run Fast. Train Smart. Build Champions.",
-    subheadline: "Professional track & field training for youth athletes ages 7-18",
+    subheadline: "Professional track & field training for youth athletes ages 6-18",
     cta1: {
       text: "See Programs",
       link: "#programs", // Scroll to programs section
@@ -48,7 +48,6 @@ export const siteContent = {
               bullets: [
                 "All season practices",
                 "Meet support and competition entries",
-                "One additional weekly practice",
               ],
               registrationLink: "https://ovroadrunners.cheddarup.com", // Cheddar Up portal
             },
@@ -108,7 +107,6 @@ export const siteContent = {
               price: "$200",
               bullets: [
                 "Team practices twice a week",
-                "Competition practice once a week",
                 "Competition entry fees included",
                 "Coaching at meets",
                 "Does not include the required USATF youth membership fee and competition uniforms",
@@ -130,7 +128,6 @@ export const siteContent = {
               price: "$250",
               bullets: [
                 "Team practices twice a week",
-                "Competition practice once a week",
                 "Competition entry fees included",
                 "Coaching at meets",
                 "Does not include the required USATF youth membership fee and competition uniforms",
@@ -185,7 +182,6 @@ export const siteContent = {
                 "Customized small-group sessions (2-4 athletes)",
                 "Sprints training",
                 "Hurdles training",
-                "Jumps training",
               ],
               registrationLink: "https://ovroadrunners.cheddarup.com-comp", // Replace with actual link
             },
@@ -246,7 +242,6 @@ export const siteContent = {
       title: "Cross Country",
       seasons: [
         {
-          active: false,
           name: "Cross Country Season",
           dates: "Aug – Nov",
           plans: [
