@@ -364,26 +364,30 @@ export const siteContent = {
       {
         name: "Jenn Houser",
         image: "/images/jenn-houser.jpg",
-        title: "Sprints & Hurdles",
-        bio: "Focuses on sprint mechanics, block starts, and efficient hurdle technique. USATF certified with a passion for developing speed and confidence.",
+        title: "",
+        bio: "Middle School PE Teacher, Former D1 Athlete, Passionate Coach. Hi everyone! I'm Jenn Houser, and I'm beyond excited to be part of the team! I competed in cross country and track at the University of Arizona - Bear Down, Wildcats! those years taguht me discipline, trit, and how powerful a supportive team can be. Now, after 17 years of teaching and coaching, I'm lucky enough to pass that experience on to the next generation of athletes. By day, I teach middle school PE at Coronado, and by afternoon, I'm lacing up my shoes to coach - because helping young runners grow in confidence, strength, and character is what truly fuelds me. Whether it's a crisp 400m rep or a pep talk at the finish line, I bring energy, structure, and heart to everything we do. I'm focused on building athletes who work hard, support each other, and have fun along the way. Can't wait to get started and make it a season to remember!",
       },
       {
         name: "Leah Britt",
         image: "/images/leah-britt.jpg",
-        title: "Middle Distance & Endurance",
-        bio: "Builds aerobic base, pacing strategy, and race tactics for 800m–3200m. Emphasizes progressive training and injury prevention.",
+        title: "",
+        bio: "Leah Britt is in her third season as a coach with the Oro Valley Roadrunners Track & Field team, where she brings passion, experience, and a deep commitment to athlete development. A former Division I collegiate athlete, Leah competed in track and field at Southern Utah University, where she also met her husband, Phillip-a fellow track standout.\n\nMarried for 19 years, Leah and Phillip are the proud parents of three active kids: Princeton (12), Loulou (10), and Phelix (6). Originally from Southeastern Idaho, Leah blends a strong competitive drive with a heart for community, making her a natural leader and mentor within the Roadrunners program.\n\nOutside of coaching, Leah lives an active lifestyle filled with hiking, swimming, and CrossFit competitions. She is also deeply committed to service, regularly seeking out ways to give back and uplift those around her.\n\nHer energy, dedication, and example inspire both athletes and those around her.",
       },
       {
-        name: "Mike West",
+        name: "Chandler John",
         image: "/images/mike-west.jpg",
-        title: "Strength & Speed Development",
-        bio: "Leads strength, mobility, and sprint power development. Designs age-appropriate lifting and plyometric routines to support performance.",
+        title: "",
+        bio: "Coach Chandler Highlight List: Married to wife Lacey, and have two kids Juniper and Rigden Had the college offers to play basketball or run track and field, and chose to play basketball for Eastern Arizona College During high school, competed in both high jump and 300m hurdles, where he won the Arizona state championship. What I love about track is that it is an honest sport. What you put into it, is what you get out of it. I love that your greatest competition is always between you and yourself. My greatest joy is watching my kids put forth their best effort and compete to best of their abilities. I also believe that track is great for multi-sport athletes because it makes you better in all aspects and can easily translate to other sports.",
       },
       {
         name: "Tiffany Simmons",
         image: "/images/tiffany-simmons.jpg",
-        title: "Jumps & Multis",
-        bio: "Specializes in long/triple jump approach, takeoff mechanics, and multi-event fundamentals. Known for technical cues and positive coaching style.",
+        title: "",
+        bio: "My love of running began at just six years old when I laced up for my first one-mile road race. That day sparked a lifelong passion for the sport that has shaped who I am. I was fortunate to grow up with a strong role model in my uncle, who was the running coach at our local high school. Under his guidance and encouragement, I dove headfirst into cross country and track, eventually racing in hundreds of road races-from 5Ks to marathons. Some of my favorite running memories are from those early days with our running club. We'd be dropped off on quiet country gravel roads and find our way back to the school. Those runs weren't just about training; they were about adventure, camaraderie, and learning to love the journey as much as the finish line. My passion for running carried me through college, where I competed at the collegiate level. After college, I found new joy in giving back to the sport that gave me so much-coaching both high school and middle school cross country and track. Helping young athletes discover their own love for running and watching them grow in confidence and character has been one of the most rewarding parts of my journey. One of my proudest accomplishments was achieving a lifelong goal: running the Boston Marathon. It was a dream years in the making and a testament to the dedication and love I've always had for this sport. But more than any race or medal, the true highlight of my running life has been coaching my daughters. Watching them grow as runners and sharing this passion together has brought everything full circle. Running has always been more than a sport to me-it's a way of life, a source of discipline and joy, and a connection to the people and places that have shaped my story. ",
+      },
+      {
+        name: "Michael Smith",
+        bio: "Michael Smith is an accomplished Physical Education teacher, coach, and leader with over 15 years of experience in education, athletics, and youth development. He currently serves as the Physical Education Teacher and Department Chair at Ironwood Ridge High School in Oro Valley, Arizona, where he also leads the Track & Field and Cross Country programs as Head Coach.Throughout his career, Michael has combined his passion for physical education with a commitment to developing student-athletes both on and off the field. From 2012 to 2022, he held similar leadership roles at Catalina Foothills High School in Tucson, serving as Department Chair and Head Coach. His teams have earned multiple Arizona High School State Championships, and he has been recognized as the Southern Arizona Coach of the Year.In addition to his work in schools, Michael is a CrossFit Trainer at CrossFit 646, guiding members in group fitness with a focus on functional movement and lifelong health. He has also played a variety of leadership roles at Chestnut Lake Camp in Pennsylvania, supporting youth development as Program/Operations Leader, Varsity Head Counselor, and Outdoor Adventure Director over multiple summers.Michael holds a Master of Arts in Human Performance and Physical Education from Adams State College, where he also served as a Graduate Assistant Track & Field Coach, and a Bachelor of Science in Education from Chadron State College. As a former NCAA Division II All-American in Track & Field, he brings firsthand athletic excellence to his coaching philosophy.",
       },
     ],
   },
@@ -445,17 +449,17 @@ export const siteContent = {
   location: {
     title: "Contact Us",
     subtitle: "Reach out and get in touch with us",
-    address: "123 Stadium Way, Runner City, RC 12345",
+    address: "Announced through Team Reach",
     mapLink: "https://maps.google.com/?q=City+Track+Stadium", // Replace with actual Google Maps link
     email: "ovroadrunners@gmail.com", // Replace with actual email
-    phone: "(555) 123-4567", // put Leslie's phone number in here // Replace with actual phone
-    instagram: "@roadrunnerstrack", // Replace with actual Instagram handle
-    instagramLink: "https://instagram.com/roadrunnerstrack", // Replace with actual link
+    phone: "(520) 549-7056", // put Leslie's phone number in here // Replace with actual phone
+    instagram: "@ov_roadrunners", // Replace with actual Instagram handle
+    instagramLink: "https://instagram.com/ov_roadrunners", // Replace with actual link
   },
 
   // Footer Section
   footer: {
-    copyright: "© 2024 Roadrunners Track Club. All rights reserved.",
+    copyright: "© 2025 Roadrunners Track Club. All rights reserved.",
     links: [
       { text: "Programs", href: "#programs" },
       { text: "Schedule", href: "#schedule" },
@@ -465,11 +469,7 @@ export const siteContent = {
     socialLinks: [
       {
         platform: "Instagram",
-        url: "https://instagram.com/roadrunnerstrack", // Replace with actual link
-      },
-      {
-        platform: "Facebook",
-        url: "https://facebook.com/roadrunnerstrack", // Replace with actual link
+        url: "https://instagram.com/ov_roadrunners", // Replace with actual link
       },
     ],
   },
