@@ -325,7 +325,7 @@ export const siteContent = {
     sessions: [
       {
         day: "Monday",
-        time: "5:45 PM - 7:00 PM",
+        time: "6:15 PM - 7:30 PM",
         groups: "Practice",
       },
       {
@@ -335,13 +335,13 @@ export const siteContent = {
       },
       {
         day: "Wednesday",
-        time: "5:45 PM - 7:00 PM",
-        groups: "Competitive Only Practice",
+        time: "6:15 PM - 7:30 PM",
+        groups: "Practice",
       },
       {
         day: "Thursday",
-        time: "5:45 PM - 7:00 PM",
-        groups: "Practice",
+        time: "On your own",
+        groups: "",
       },
       {
         day: "Friday",

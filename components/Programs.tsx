@@ -24,8 +24,10 @@ export default function Programs() {
           {/* Programs Note */}
           {programs.note ? (
             <div className="mb-8 animate-slide-up" style={{ animationDelay: '50ms' }}>
-              <div className="rounded-md border border-gray-700 bg-gray-800/60 px-4 py-3 text-gray-200 text-sm">
-                {programs.note}
+              <div className="p-4 bg-accent-blue/10 rounded-lg border border-accent-blue/30">
+                <p className="text-center text-gray-300">
+                  <span className="font-semibold text-accent-blue">Note:</span> {programs.note}
+                </p>
               </div>
             </div>
           ) : null}
@@ -36,7 +38,7 @@ export default function Programs() {
               <h6 className="text-lg font-semibold text-gray-200">Training Groups by Age</h6>
               <span className="text-sm text-gray-400">Placement based on age and experience</span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {(programs.track.seasons?.[0]?.groups || []).map((group, groupIndex) => (
                 <div key={`track-groups-card-${groupIndex}`} className="card">
                   <div className="flex flex-col h-full">
