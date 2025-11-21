@@ -13,52 +13,13 @@ export default function Location() {
           <p className="text-xl text-gray-300">{location.subtitle}</p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Map placeholder */}
-          <div className="card h-96 lg:h-auto min-h-[400px]">
-            <div className="w-full h-full bg-gray-800 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <svg
-                  className="w-16 h-16 text-accent-orange mx-auto mb-4"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <p className="text-gray-400 mb-4">Interactive map placeholder</p>
-                <a
-                  href={location.mapLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary inline-block"
-                >
-                  View on Google Maps
-                </a>
-              </div>
-              {/* Replace with actual map embed:
-              <iframe
-                src="YOUR_GOOGLE_MAPS_EMBED_URL"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-              */}
-            </div>
-          </div>
+        <div className="grid grid-cols-1">
 
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-8 max-w-2xl mx-auto">
             <div className="card">
               <h3 className="text-2xl font-bold text-accent-orange mb-6">Get in Touch</h3>
-              
+
               <div className="space-y-6">
                 {/* Address */}
                 <div className="flex items-start">

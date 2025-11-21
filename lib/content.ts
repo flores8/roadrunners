@@ -392,27 +392,7 @@ export const siteContent = {
     ],
   },
 
-  // Testimonials Section
-  testimonials: {
-    title: "About the Oro Valley Roadrunners",
-    list: [
-      {
-        quote: "The Oro Valley Roadrunners are a dedicated cross country and track & field club, bringing together athletes of all ages and skill levels who share a passion for running, jumping, and throwing. Founded to give the Oro Valley community a place to train, compete, and grow, our club offers a supportive environment where athletes can push their limits, set new goals, and develop a lifelong love for the sport. We believe that success in track and cross country comes from hard work, resilience, and a strong team spirit.",
-        author: "Jennifer M.",
-        role: "Parent",
-      },
-      {
-        quote: "Best decision we made for our son. He loves practice and has made great friends while improving his times.",
-        author: "Robert K.",
-        role: "Parent",
-      },
-      {
-        quote: "Coach Marcus helped me earn a track scholarship to college. Forever grateful for Roadrunners!",
-        author: "Alex T.",
-        role: "Alumni Athlete",
-      },
-    ],
-  },
+
 
   // FAQs Section
   faqs: {
@@ -450,11 +430,10 @@ export const siteContent = {
     title: "Contact Us",
     subtitle: "Reach out and get in touch with us",
     address: "Announced through Team Reach",
-    mapLink: "https://maps.google.com/?q=City+Track+Stadium", // Replace with actual Google Maps link
-    email: "ovroadrunners@gmail.com", // Replace with actual email
-    phone: "(520) 549-7056", // put Leslie's phone number in here // Replace with actual phone
-    instagram: "@ov_roadrunners", // Replace with actual Instagram handle
-    instagramLink: "https://instagram.com/ov_roadrunners", // Replace with actual link
+    email: "ovroadrunners@gmail.com",
+    phone: "(520) 549-7056",
+    instagram: "@ov_roadrunners",
+    instagramLink: "https://instagram.com/ov_roadrunners",
   },
 
   // Footer Section

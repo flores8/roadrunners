@@ -34,9 +34,8 @@ export default function FAQs() {
                     {faq.question}
                   </h3>
                   <svg
-                    className={`w-5 h-5 text-accent-orange transform transition-transform ${
-                      openIndex === index ? 'rotate-180' : ''
-                    }`}
+                    className={`w-5 h-5 text-accent-orange transform transition-transform ${openIndex === index ? 'rotate-180' : ''
+                      }`}
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -48,28 +47,15 @@ export default function FAQs() {
                   </svg>
                 </div>
               </button>
-              
+
               <div
                 id={`faq-answer-${index}`}
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? 'max-h-96 mt-4' : 'max-h-0'
-                }`}
+                className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96 mt-4' : 'max-h-0'
+                  }`}
               >
                 <p className="text-gray-300 leading-relaxed">
                   {faq.answer}
-                  {faq.link && (
-                    <>
-                      {' '}
-                      <a
-                        href={faq.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-accent-blue hover:text-blue-400 underline font-semibold"
-                      >
-                        {faq.linkText}
-                      </a>
-                    </>
-                  )}
+
                 </p>
               </div>
             </div>
